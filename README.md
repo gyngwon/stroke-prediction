@@ -29,13 +29,19 @@ The dataset used in this project contains the following features:
 
 ## Handling Missing Values
 
+<img width="891" alt="Screenshot 2024-07-07 at 8 29 40 PM" src="https://github.com/gyngwon/stroke_prediction/assets/165247513/ae3782a9-7b56-4832-865d-119c242f6047">
+
 The dataset contains 201 missing values in the BMI feature. To address this, the KNN imputer was used to estimate the missing values based on the closest neighbors in the dataset.
 
 ## Imbalanced Data
 
+<img width="578" alt="Screenshot 2024-07-07 at 8 30 00 PM" src="https://github.com/gyngwon/stroke_prediction/assets/165247513/7f5edfc1-a570-4735-a56e-11ecad63e0ed">
+
+<img width="658" alt="Screenshot 2024-07-07 at 8 31 14 PM" src="https://github.com/gyngwon/stroke_prediction/assets/165247513/edcb3bbe-3979-4b76-b91c-e2f7c3959de0">
+
 The dataset is imbalanced, with significantly more stroke-free patients than patients who have had a stroke. To address this, oversampling techniques were employed to balance the class distribution.
 
-<img width="891" alt="Screenshot 2024-07-07 at 8 29 40 PM" src="https://github.com/gyngwon/stroke_prediction/assets/165247513/ae3782a9-7b56-4832-865d-119c242f6047">
+<img width="496" alt="Screenshot 2024-07-07 at 8 31 32 PM" src="https://github.com/gyngwon/stroke_prediction/assets/165247513/61244774-6ad2-4151-90c5-32880c16dfd6">
 
 ## Models and Results
 
