@@ -35,6 +35,8 @@ The dataset contains 201 missing values in the BMI feature. To address this, the
 
 The dataset is imbalanced, with significantly more stroke-free patients than patients who have had a stroke. To address this, oversampling techniques were employed to balance the class distribution.
 
+<img width="891" alt="Screenshot 2024-07-07 at 8 29 40 PM" src="https://github.com/gyngwon/stroke_prediction/assets/165247513/ae3782a9-7b56-4832-865d-119c242f6047">
+
 ## Models and Results
 
 ### Random Forest
