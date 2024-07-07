@@ -1,4 +1,4 @@
-# Stroke Prediction Using Machine Learning
+# Stroke Prediction
 
 This project aims to predict the likelihood of stroke in patients using various machine learning techniques. The dataset contains various features like gender, age, hypertension status, heart disease status, marital status, work type, residence type, average glucose level, BMI, and smoking status.
 
