@@ -79,10 +79,10 @@ The ensemble model yielded improved accuracy and robustness in predicting stroke
 
 | Metric       | Value    |
 |--------------|----------|
-| Accuracy     | XX%      |
-| Precision    | XX%      |
-| Recall       | XX%      |
-| F1-Score     | XX%      |
+| Accuracy     | 89%      |
+| Precision    | 85%      |
+| Recall       | 94%      |
+| F1-Score     | 89%      |
 
 > Note: Replace the XX% values with the results obtained from your ensemble model evaluation.
 
