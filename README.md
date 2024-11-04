@@ -101,7 +101,7 @@ The performance of the models was evaluated using a confusion matrix and classif
 | Recall       | 0.34     |
 | F1-Score     | 0.14     |
 
-## Constructing a Model Using Ensemble of Gradient Boosting and Neural Network to Better Predict the Minority Class (Stroke Cases)
+## Ensemble of Gradient Boosting and Neural Network to Better Predict the Minority Class (Stroke Cases)
 - **Stratified K-Fold Cross-Validation**: Use `StratifiedKFold` to ensure that the minority class is evenly distributed across each fold.
 - **Defining Gradient Boosting and Neural Network Models**: Define `GradientBoostingClassifier` and `MLPClassifier`, and train each model to predict both the minority and majority classes effectively.
 - **Ensemble Using VotingClassifier**: Use `VotingClassifier` to ensemble the two models. The `voting='soft'` option sums the predicted probabilities from each model to make the final prediction, potentially improving the prediction performance for the minority class.
