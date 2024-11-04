@@ -37,6 +37,9 @@ Multiple classification models were trained to predict stroke occurrence:
 - **Logistic Regression**
 - **Random Forest Classifier**
 - **Support Vector Machine (SVC)**
+- **Gradient Boosting**
+- **Neural Network**
+- **K-Nearest Neighbors (KNN)**
 
 ### Data Balancing
 To address class imbalance, the Synthetic Minority Over-sampling Technique (SMOTE) was applied to the training dataset.
@@ -98,8 +101,11 @@ The performance of the models was evaluated using a confusion matrix and classif
 | Recall       | 0.34     |
 | F1-Score     | 0.14     |
 
-## Ensemble Model Approach
-An ensemble method was applied to improve model performance. Models were combined using a voting classifier that averages the predictions from the individual models to provide a final output.
+## Constructing a Model Using Ensemble of Gradient Boosting and Neural Network to Better Predict the Minority Class (Stroke Cases)
+- **Stratified K-Fold Cross-Validation**: Use `StratifiedKFold` to ensure that the minority class is evenly distributed across each fold.
+- **Defining Gradient Boosting and Neural Network Models**: Define `GradientBoostingClassifier` and `MLPClassifier`, and train each model to predict both the minority and majority classes effectively.
+- **Ensemble Using VotingClassifier**: Use `VotingClassifier` to ensemble the two models. The `voting='soft'` option sums the predicted probabilities from each model to make the final prediction, potentially improving the prediction performance for the minority class.
+- **Cross-Validation Evaluation**: For each fold, assess the precision, recall, and F1 score for the minority class (1) based on the prediction results, and finally summarize the average performance.
 
 ## Final Results
 The ensemble model yielded improved accuracy and robustness in predicting stroke occurrences compared to individual models. Specific results from the ensemble model are:
@@ -110,8 +116,6 @@ The ensemble model yielded improved accuracy and robustness in predicting stroke
 | Precision    | 85%      |
 | Recall       | 94%      |
 | F1-Score     | 89%      |
-
-> Note: Replace the XX% values with the results obtained from your ensemble model evaluation.
 
 ## Conclusion
 The stroke prediction project successfully demonstrated the use of machine learning techniques to identify risk factors associated with strokes. While the models showed varying degrees of success, the ensemble approach highlighted the potential for improving prediction accuracy by combining multiple algorithms. Further improvements could involve tuning hyperparameters and exploring additional features or models to enhance predictive performance.
