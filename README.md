@@ -45,61 +45,18 @@ Multiple classification models were trained to predict stroke occurrence:
 To address class imbalance, the Synthetic Minority Over-sampling Technique (SMOTE) was applied to the training dataset.
 
 ## Model Results
-The performance of the models was evaluated using a confusion matrix and classification report. Here are the results for each model:
+The performance of the models was evaluated using a confusion matrix and classification report. 
 
-### Logistic Regression
 
-| Metric       | Value    |
-|--------------|----------|
-| Accuracy     | 76%      |
-| Precision    | 0.16     |
-| Recall       | 0.83     |
-| F1-Score     | 0.27     |
+| Model                              | Accuracy | Precision | Recall | F1-Score |
+|------------------------------------|----------|-----------|--------|----------|
+| Logistic Regression                | 76%      | 0.16      | 0.83   | 0.27     |
+| Random Forest                      | 85%      | 0.10      | 0.21   | 0.13     |
+| Support Vector Machine (SVC)      | 75%      | 0.13      | 0.60   | 0.21     |
+| Gradient Boosting                  | 79%      | 0.15      | 0.64   | 0.25     |
+| Neural Network                     | 79%      | 0.11      | 0.40   | 0.17     |
+| K-Nearest Neighbors (KNN)         | 78%      | 0.09      | 0.34   | 0.14     |
 
-### Random Forest
-
-| Metric       | Value    |
-|--------------|----------|
-| Accuracy     | 85%      |
-| Precision    | 0.10     |
-| Recall       | 0.21     |
-| F1-Score     | 0.13     |
-
-### Support Vector Machine
-
-| Metric       | Value    |
-|--------------|----------|
-| Accuracy     | 75%      |
-| Precision    | 0.13     |
-| Recall       | 0.60     |
-| F1-Score     | 0.21     |
-
-### Gradient Boosting
-
-| Metric       | Value    |
-|--------------|----------|
-| Accuracy     | 79%      |
-| Precision    | 0.15     |
-| Recall       | 0.64     |
-| F1-Score     | 0.25     |
-
-### Neural Network
-
-| Metric       | Value    |
-|--------------|----------|
-| Accuracy     | 79%      |
-| Precision    | 0.11     |
-| Recall       | 0.40     |
-| F1-Score     | 0.17     |
-
-### K-Nearest Neighbors (KNN)
-
-| Metric       | Value    |
-|--------------|----------|
-| Accuracy     | 78%      |
-| Precision    | 0.09     |
-| Recall       | 0.34     |
-| F1-Score     | 0.14     |
 
 ## Ensemble of Gradient Boosting and Neural Network to Better Predict the Minority Class (Stroke Cases)
 - **Stratified K-Fold Cross-Validation**: Use `StratifiedKFold` to ensure that the minority class is evenly distributed across each fold.
